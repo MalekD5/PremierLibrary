@@ -16,7 +16,7 @@ This is a simple library management system built with Next.js, Drizzle ORM, and 
 1. Clone the repository:
 
 ```bash
-git clone
+git clone https://github.com/MalekD5/PremierLibrary.git
 ```
 
 2. Install dependencies:
