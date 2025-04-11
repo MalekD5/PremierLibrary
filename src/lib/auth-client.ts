@@ -5,9 +5,14 @@ export const {
 	signIn,
 	signUp,
 	signOut,
-    listSessions,
-    revokeOtherSessions,
-    revokeSession,
+	useSession,
+	deleteUser,
+	changePassword,
+	updateUser,
+	revokeSession,
+	revokeOtherSessions,
+	multiSession,
+	listSessions,
 } = createAuthClient({
 	plugins: [usernameClient(), multiSessionClient()],
 });
