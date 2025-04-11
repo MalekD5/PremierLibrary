@@ -5,6 +5,9 @@ export const {
 	signIn,
 	signUp,
 	signOut,
+    listSessions,
+    revokeOtherSessions,
+    revokeSession,
 } = createAuthClient({
 	plugins: [usernameClient(), multiSessionClient()],
 });
