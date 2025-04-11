@@ -34,3 +34,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# env
+.env
+
+# drizzle and better-auth
+drizzle
+better-auth-migrations
