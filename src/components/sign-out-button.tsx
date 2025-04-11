@@ -12,7 +12,7 @@ export default function SignOutButton() {
 		signOut({
 			fetchOptions: {
 				onSuccess: () => {
-					router.replace("/sign-in");
+					router.replace("/login");
 				},
 			},
 		});
