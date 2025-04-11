@@ -19,5 +19,14 @@ export const registerSchema = z
 		path: ["confirmPassword"],
 	});
 
+export const bookIdZodString = z.string().uuid();
+
+export const createBookSchema = z.object({
+	title: z.string().min(3).max(128),
+	description: z.string().min(3).max(1024),
+	imageUrl: z.string().url(),
+});
+
 export type InferredLoginSchema = z.infer<typeof loginSchema>;
 export type InferredRegisterSchema = z.infer<typeof registerSchema>;
+export type InferredCreateBookSchema = z.infer<typeof createBookSchema>;
